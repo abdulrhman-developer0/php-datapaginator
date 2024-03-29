@@ -1,0 +1,21 @@
+{
+    "name": "abdulrhman-developer0/php-datapaginator",
+    "description": "this using for split beg arrays to small arrays with pagination",
+    "type": "library",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "AbdulrhmanDeveloper0\\PhpDatapaginator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "abdulrhman-developer0",
+            "email": "tknwtknwlwjy10@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "symfony/var-dumper": "7.1.x-dev"
+    }
+}
