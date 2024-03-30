@@ -2,7 +2,7 @@
     "name": "abdulrhman-developer0/php-datapaginator",
     "description": "this using for split beg arrays to small arrays with pagination",
     "type": "library",
-    "license": "GPL",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "AbdulrhmanDeveloper0\\PhpDatapaginator\\": "src/"
