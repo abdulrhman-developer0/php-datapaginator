@@ -8,6 +8,12 @@ class Paginator
 
     protected int $itemsPerPage;
 
+    /**
+     * Initialize the paginator class
+     * 
+     * @param array $items The data to split as pages.
+     * @param int $itemsPerPage The count of items per page
+     */
     public function __construct(array $items = [], int $itemsPerPage = 10)
     {
         // initialize paginatior.
@@ -15,6 +21,12 @@ class Paginator
         $this->items = $items;
     }
 
+    /**
+     * Retrieve items for any page through the page index
+     * 
+     * @param int $pageNumber The page index
+     * @return array The items of the page
+     */
     public function get(int $pageNumber): array
     {
         if ($pageNumber <= 0) {
@@ -36,6 +48,9 @@ class Paginator
         return array_slice($this->items, $pageStart, $pageLength);
     }
 
+    /**
+     * @return int|null Retunr the first page index if exists or null if not
+     */
     public function getFirstPage(): int|null
     {
         $last = $this->getLastPage();
@@ -45,6 +60,9 @@ class Paginator
             : 1;
     }
 
+    /**
+     * @return int|null Retunr the last page index if exists or null if not
+     */
     public function getLastPage(): int|null
     {
         if ($this->items == []) {
